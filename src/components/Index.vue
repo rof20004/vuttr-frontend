@@ -76,7 +76,7 @@ export default {
 
   methods: {
     fetchTools () {
-      fetch('http://localhost:3000/tools')
+      fetch(process.env.VUE_APP_API_URL + '/tools')
         .then(response => response.json())
         .then(data => this.tools = data)
     }

@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  frontend:
+    restart: always
+    build:
+      context: .
+    ports:
+      - '80:80'
+  backend:
+    restart: always
+    image: rof20004/challenge-fake-api
+    ports:
+      - '3000:3000'

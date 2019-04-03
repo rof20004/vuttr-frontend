@@ -35,10 +35,10 @@ export default {
 
   methods: {
     remove () {
-      fetch(`http://localhost:3000/tools/${this.tool.id}`, {
+      fetch(`${process.env.VUE_APP_API_URL}/tools/${this.tool.id}`, {
         method: 'DELETE'
       }).then(response => response.json())
-        .then(data => {
+        .then(() => {
           this.$emit('update')
           this.updateStatus()
         })

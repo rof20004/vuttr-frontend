@@ -72,14 +72,14 @@ export default {
 
   methods: {
     save () {
-      fetch('http://localhost:3000/tools', {
+      fetch(process.env.VUE_APP_API_URL + '/tools', {
         method: 'POST',
         body: JSON.stringify(this.tool),
         headers: {
           'Content-Type': 'application/json'
         }
       }).then(response => response.json())
-        .then(data => {
+        .then(() => {
           this.$emit('update')
           this.updateStatus()
         })
