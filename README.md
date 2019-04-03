@@ -1,29 +1,21 @@
-# vuttr-frontend
+# Project VUTTR-FRONTEND
 
-## Project setup
-```
-yarn install
-```
+## Tools
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+1. Vue.js
+2. Vue Cli 3
+3. Docker
+4. Docker Compose
+5. Docker Hub
+6. Vuetify
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## How-to
 
-### Run your tests
-```
-yarn run test
-```
+* Run project
+  > make start
 
-### Lints and fixes files
-```
-yarn run lint
-```
+* Access
+  > http://localhost
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ 
+### Enjoy!
